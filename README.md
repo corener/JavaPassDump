@@ -74,6 +74,8 @@ OQLQuery8+.jar 适配JDK>=8
 
 Tips: 常量池，可分为运行时常量池、类常量池、字符串常量池，在JDK6时，字符串常量池位于方法区中，在JDK7时，把字符串常量池移到了堆中；在JDK8时，把方法区干掉，换成了堆外内存的元数据空间，同时运行时常量池和类常量池跟着在元数据空间中，但字符串常量池仍在堆中；
 ```
+![jdk6](./img/jdk6.png)
+![jdk7](./img/jdk7.png)
 
 - 获取JVMHeapDump
 
@@ -121,5 +123,5 @@ map(heap.classes(), function (cls) {
 ```
 - 运行效果
 
-    
+![result](./img/result.png)
 
